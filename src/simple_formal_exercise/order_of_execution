@@ -1,0 +1,10 @@
+Parent static variable
+Parent static block
+child static variable
+child static block
+parent instance variable
+parent instance block
+parent constructor
+child instance variable
+child instance block
+child constructor

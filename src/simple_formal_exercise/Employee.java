@@ -8,13 +8,21 @@ public class Employee {
     private double salary;
     private LocalDate hireDay;
 
+    Employee(){
+        System.out.println("Employee zero-arg constructor!");
+        this.printName();
+    }
+
     Employee(String name, double salary, int year, int month, int day){
         this.name = name;
         this.salary = salary;
         this.hireDay = LocalDate.of(year, month, day);
     }
 
-    //instance methods
+
+    public void printName(){
+        System.out.println("Employee name is printed: " + name);
+    }
     public String getName(){return name;}
     public double getSalary(){return salary;}
     public void setSalary(double salary){this.salary = salary;}
