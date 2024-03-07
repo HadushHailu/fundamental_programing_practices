@@ -7,8 +7,9 @@ import java.util.Arrays;
  * @since 0.1
  */
 public class MyTable {
-    Entry[] entries = new Entry[26];
+    Entry[] entries;
     MyTable(){
+        entries = new Entry[26];
     }
 
     /**
