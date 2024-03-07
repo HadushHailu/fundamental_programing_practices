@@ -41,8 +41,11 @@ public class RefernceTypeTest {
         Art art = new Drawing(12,14);
 
         if(art instanceof Drawing){
-            Drawing drawing = (Drawing) art;
+            System.out.println("hello");
+            //Drawing drawing = (Drawing) art;
         }
+
+        System.out.println(art.getClass());
 
 
     }

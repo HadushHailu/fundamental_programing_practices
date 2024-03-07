@@ -53,6 +53,7 @@ public class Computer {
     public boolean equals(Object object){
         if(this == object)
             return true;
+        //
         else if(object == null || getClass() != object.getClass()){
             return false;
         }
@@ -82,5 +83,7 @@ public class Computer {
         System.out.println("computer's hashCode: " + computer.hashCode());
         System.out.println("computer1's hashCode: " + computer1.hashCode());
         System.out.println(computer.hashCode() == computer1.hashCode());
+
+        System.out.println(computer.getClass().getSimpleName());
     }
 }
