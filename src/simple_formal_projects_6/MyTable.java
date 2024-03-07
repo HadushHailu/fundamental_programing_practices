@@ -19,7 +19,9 @@ public class MyTable {
     public void add(char c,
                     String s){
         int charIndex = charIndex(c);
-        entries[charIndex] = new Entry(c,s);
+        if(charIndex >= 0 && charIndex < 26){
+            entries[charIndex] = new Entry(c,s);
+        }
     }
 
     @Override
@@ -62,7 +64,9 @@ public class MyTable {
        myTable.add('b',"Billy");
        myTable.add('w',"Willie");
        System.out.println(myTable);
-      
+
+       MyTable[] myTables = new MyTable[4];
+       System.out.println(myTables[0]);
     }
 
 }
