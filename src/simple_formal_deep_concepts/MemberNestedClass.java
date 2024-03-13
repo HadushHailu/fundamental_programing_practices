@@ -38,6 +38,7 @@ public class MemberNestedClass {
         this.param = param;
     }
 
+
     public class MyInnerClass{
         private String intParam;
         MyInnerClass(String intParam){
