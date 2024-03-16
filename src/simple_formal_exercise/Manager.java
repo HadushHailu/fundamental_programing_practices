@@ -5,12 +5,14 @@ import java.time.LocalDate;
 public class Manager extends Employee{
     private double bonus;
 
+
+
     Manager(){System.out.println("Manager zero-arg constructor!");}
 
     public Manager(String name,
                    double salary,
                    int year, int month, int day){
-        //super(name, salary, year, month, day);
+        super(name, salary, year, month, day);
         bonus = 0;
     }
 

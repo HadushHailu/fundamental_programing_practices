@@ -69,13 +69,15 @@ public class BinarySearchTree {
         return node;
     }
 
+
+
     public void inOrderTraverse(TreeNode node){
         if(node != null){
             inOrderTraverse(node.left);
             System.out.print(node.val + " ");
             inOrderTraverse(node.right);
         }
-    }
+    };
 
     public void preOrderTraverse(TreeNode node){
         if(node != null){
